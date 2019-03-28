@@ -5,7 +5,7 @@ Default initialization assumes the worksheet will be saved with an index and hea
 
 Pass in mathematical operators with strings, limited support currently for Excel built-in functions. If a value is not a column name in df.columns it is passed in as it is, whether that means it's an operator or builtin function.
 
-The ```.formula()``` method returns a concatenated string beginning with '=' and containing the row index for the Excel formula for each column.
+The ```.formula()``` method returns a list of strings beginning with '=' and containing the row index for the Excel formula
 
 Installation:
 
@@ -15,7 +15,7 @@ Basic usage:
 
 ```
 import pandas as pd
-from excel_formulas import ExcelFormulas
+from xlFormulas import ExcelFormulas
 
 df = pd.read_excel('sample_data.xlsx')
 
